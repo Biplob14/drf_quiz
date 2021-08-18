@@ -23,6 +23,7 @@ class AnswerInlineModel(admin.TabularInline):
         'is_right',
     ]
 
+@admin.register(models.Question)
 class QuestionAdmin(admin.ModelAdmin):
     fields = [
         'title',
